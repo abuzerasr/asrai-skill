@@ -1,6 +1,6 @@
 ---
 name: asrai
-description: Crypto market analysis using Asrai API. Covers technical analysis, screeners, sentiment, forecasting, smart money, Elliott Wave, cashflow, DEX data, and AI-powered insights. Requires asrai-mcp installed and PRIVATE_KEY env var set. Each endpoint costs $0.05 USDC from your own wallet on Base mainnet via x402.
+description: Crypto market analysis using Asrai API. Covers technical analysis, screeners, sentiment, forecasting, smart money, Elliott Wave, cashflow, DEX data, and AI-powered insights. Requires asrai-mcp installed and PRIVATE_KEY env var set. Each endpoint costs $0.001 USDC from your own wallet on Base mainnet via x402.
 license: MIT
 ---
 
@@ -18,7 +18,7 @@ And a `~/.env` file with your wallet key:
 PRIVATE_KEY=0x<your_private_key>
 ```
 
-Each endpoint call costs **$0.05 USDC** from your wallet on Base mainnet ($0.10 for `ask_ai`).
+Each endpoint call costs **$0.001 USDC** from your wallet on Base mainnet ($0.0020 for `ask_ai`).
 
 ## Payment transparency
 
@@ -32,19 +32,19 @@ Each endpoint call costs **$0.05 USDC** from your wallet on Base mainnet ($0.10 
 |---|---|---|
 | `market_overview` | Trending, gainers/losers, RSI, top/bottom | $0.20 |
 | `technical_analysis(symbol, timeframe)` | Signal, ALSAT, PSAR, MACD, AlphaTrend, TD | $0.35 |
-| `sentiment` | CBBI, CMC sentiment, CMC AI | $0.15 |
-| `forecast(symbol)` | AI price forecast | $0.05 |
-| `screener(type)` | Find coins by criteria | $0.05 |
-| `smart_money(symbol, timeframe)` | SMC, order blocks, FVGs | $0.10 |
-| `elliott_wave(symbol, timeframe)` | Elliott Wave analysis | $0.05 |
-| `ichimoku(symbol, timeframe)` | Ichimoku cloud | $0.05 |
-| `cashflow(mode, symbol)` | Capital flow | $0.05 |
+| `sentiment` | CBBI, CMC sentiment, CMC AI | $0.0025 |
+| `forecast(symbol)` | AI price forecast | $0.001 |
+| `screener(type)` | Find coins by criteria | $0.001 |
+| `smart_money(symbol, timeframe)` | SMC, order blocks, FVGs | $0.0020 |
+| `elliott_wave(symbol, timeframe)` | Elliott Wave analysis | $0.001 |
+| `ichimoku(symbol, timeframe)` | Ichimoku cloud | $0.001 |
+| `cashflow(mode, symbol)` | Capital flow | $0.001 |
 | `coin_info(symbol)` | Stats, info, price, tags | $0.20 |
-| `dexscreener(contract)` | DEX data | $0.05 |
-| `chain_tokens(chain, max_mcap)` | Low-cap tokens on chain | $0.05 |
-| `portfolio` | Portfolio analysis | $0.05 |
-| `channel_summary` | Latest narratives | $0.05 |
-| `ask_ai(question)` | AI analyst answer | $0.10 |
+| `dexscreener(contract)` | DEX data | $0.001 |
+| `chain_tokens(chain, max_mcap)` | Low-cap tokens on chain | $0.001 |
+| `portfolio` | Portfolio analysis | $0.001 |
+| `channel_summary` | Latest narratives | $0.001 |
+| `ask_ai(question)` | AI analyst answer | $0.0020 |
 
 ## Output rules
 
