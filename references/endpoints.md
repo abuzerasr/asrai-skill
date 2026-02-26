@@ -73,7 +73,7 @@ x402 automatic — $0.001 USDC per endpoint on Base mainnet ($0.002 for `/ai`)
 - `GET /api/portfolio/<symbol>` — portfolio for specific coin
 
 ### AI
-- `POST /ai` body: `{"message": "<question>"}` — AI analyst ($0.0020)
+- `POST /ai` body: `{"message": "<question>"}` — AI analyst ($0.002)
 
 ## Macro signals
 - `GET /api/signal/btc.d/1D` — BTC dominance
