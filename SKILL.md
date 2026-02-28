@@ -8,9 +8,19 @@ license: MIT
 
 ## Prerequisites
 
-This skill requires **asrai-mcp** to be installed:
+This skill requires **asrai-mcp** to be installed. Pick one:
+
 ```bash
+# Option 1 — uvx (recommended, no permanent install)
+# Install uv first (one time):
+curl -LsSf https://astral.sh/uv/install.sh | sh
+# Then Claude Desktop config uses: "command": "uvx", "args": ["asrai-mcp"]
+
+# Option 2 — pip
 pip install asrai-mcp
+
+# Option 3 — npx (requires Node.js + uv)
+npx -y asrai-mcp
 ```
 
 And a `~/.env` file with your wallet key:
@@ -57,11 +67,14 @@ Call only when you encounter an unfamiliar indicator name in tool output. Standa
 
 ## Output rules
 
+- Write like an experienced trader explaining to a friend — conversational, confident, direct. Not a report template.
 - Think like both a trader AND a long-term investor. Default to investor mode (macro thesis, cycle position, accumulation zones). Switch to trader mode only when user asks for entry/when to buy.
-- Keep responses 200-400 words — thorough but easy to read.
-- Use emojis to structure sections: 📊 market context, 🎯 target/entry, ⚠️ risk, 📈📉 direction, 💡 insight.
+- Keep responses 200-400 words — thorough but easy to read. Short lines, breathing room between sections.
+- Use emojis sparingly to mark section breaks where helpful — but don't force a fixed template. Let the response shape itself around what matters most.
 - Never list raw indicator values — synthesize into plain language verdict.
-- Never address the user by name in responses.
+- Avoid low-liquidity noise: prefer signals that appear across multiple indicators, have meaningful volume, or a clear catalyst.
+- Never mention tool names, endpoints, or API calls in responses.
+- End with 1 clear action bias: accumulate / wait / avoid — and why.
 
 ## Default analysis pattern
 
