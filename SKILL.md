@@ -1,5 +1,5 @@
 ---
-name: asrai
+name: asrai-x402
 description: Crypto market analysis using Asrai API. Covers technical analysis, screeners, sentiment, forecasting, smart money, Elliott Wave, cashflow, DEX data, and AI-powered insights. Requires asrai-mcp installed and PRIVATE_KEY env var set. Each API call costs $0.001 USDC from your own wallet on Base mainnet via x402.
 license: MIT
 ---
@@ -8,25 +8,30 @@ license: MIT
 
 ## Prerequisites
 
-This skill requires **asrai-mcp** to be installed. Pick one:
+This skill requires **asrai-mcp** (Node.js, zero install). Add to Claude Desktop config:
 
-```bash
-# Option 1 — uvx (recommended, no permanent install)
-# Install uv first (one time):
-curl -LsSf https://astral.sh/uv/install.sh | sh
-# Then Claude Desktop config uses: "command": "uvx", "args": ["asrai-mcp"]
-
-# Option 2 — pip
-pip install asrai-mcp
-
-# Option 3 — npx (requires Node.js + uv)
-npx -y asrai-mcp
+```json
+{
+  "mcpServers": {
+    "asrai": {
+      "command": "npx",
+      "args": ["-y", "asrai-mcp"],
+      "env": { "PRIVATE_KEY": "0x<your_private_key>" }
+    }
+  }
+}
 ```
 
-And a `~/.env` file with your wallet key:
+Or store the key in `~/.env` and omit the `env` block:
 ```
 PRIVATE_KEY=0x<your_private_key>
 ```
+
+Config file location: macOS `~/Library/Application Support/Claude/claude_desktop_config.json`, Windows `%APPDATA%\Claude\claude_desktop_config.json`, Linux `~/.config/Claude/claude_desktop_config.json`.
+
+For **n8n / remote connections**, use the hosted SSE server — no install needed:
+- HTTP Streamable: `https://mcp.asrai.me/mcp?key=0x<your_private_key>`
+- SSE (legacy): `https://mcp.asrai.me/sse?key=0x<your_private_key>`
 
 Each API call costs **$0.001 USDC** from your wallet on Base mainnet ($0.002 for `ask_ai`). `indicator_guide` is FREE.
 
