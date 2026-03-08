@@ -7,6 +7,30 @@ metadata: {"openclaw":{"emoji":"📈","requires":{"env":["ASRAI_PRIVATE_KEY"]}},
 
 # Asrai — Crypto Analysis via x402
 
+## Install
+
+```bash
+npx -y -p asrai-mcp install-skill
+```
+
+Auto-detects OpenClaw, Cursor, Cline, and other agents. Then set your key:
+
+```
+ASRAI_PRIVATE_KEY=0x<your_private_key>  # add to ~/.env
+```
+
+For MCP agents (Cursor, Cline, Claude Desktop) also add to config:
+
+```json
+{
+  "mcpServers": {
+    "asrai": { "command": "npx", "args": ["-y", "asrai-mcp"] }
+  }
+}
+```
+
+---
+
 Use Asrai tools when the user asks about crypto prices, market analysis, trading signals, sentiment, or investment advice.
 
 ## When to use

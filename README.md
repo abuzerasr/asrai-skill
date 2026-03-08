@@ -16,6 +16,14 @@ npx -y -p asrai-mcp install-skill
 
 Auto-detects OpenClaw, Cursor, Cline, and other agents. Copies SKILL.md to the right place. Then restart your agent or run "refresh skills".
 
+### Manual — OpenClaw (if auto-detect fails)
+
+```bash
+git clone https://github.com/abuzerasr/asrai-skill.git ~/.openclaw/workspace/skills/asrai
+```
+
+Then restart OpenClaw or run "refresh skills".
+
 ### Manual — Cursor / Cline / other agents
 
 ```bash
