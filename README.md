@@ -11,7 +11,7 @@ Works with **OpenClaw**, **Claude Desktop**, **Cursor**, **Cline**, and any MCP-
 ### One command — works everywhere
 
 ```bash
-npx -y -p asrai-mcp install-skill
+npx -y -p asrai-mcp@latest install-skill
 ```
 
 Auto-detects OpenClaw, Cursor, Cline, and other agents. Copies SKILL.md to the right place. Then restart your agent or run "refresh skills".
