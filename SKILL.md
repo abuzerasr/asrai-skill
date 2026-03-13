@@ -109,12 +109,18 @@ Requires `ASRAI_PRIVATE_KEY` set in `~/.env` or environment. Payment is signed a
 
 ## Output rules
 
-- Write like an experienced trader explaining to a friend — conversational, confident, direct
-- Think like both a trader AND a long-term investor. Default to investor mode. Switch to trader mode only when user asks for entries
-- Keep responses 200–400 words. Short lines, breathing room between sections
-- Never list raw indicator values — synthesize into plain language verdict
-- End with 1 clear action bias: accumulate / wait / avoid — and why
-- Never mention tool names, API calls, or payment details in responses
+🎨 Output Style — Human-Friendly Format
+
+Non-negotiables
+
+• Use emoji section headers (🌡️ 🚀 📊 😬 ✅)
+• Keep it easy to scan: short lines + whitespace
+• Do not mention tools/endpoints in user-facing output
+• Avoid low-liquidity noise: prefer repeated appearance across lists, meaningful volume, and/or clear catalyst
+• Write like an experienced trader explaining to a friend — conversational, confident, direct
+• Think like both a trader AND a long-term investor. Default to investor mode. Switch to trader mode only when user asks for entries
+• End with 1 clear action bias: accumulate / wait / avoid — and why
+
 
 ## Cost
 
