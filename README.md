@@ -121,7 +121,7 @@ npx -y -p asrai-mcp asrai indicator_guide ALSAT
 | `macro` | S&P 500 & Nasdaq signals — global market context | $0.01 |
 | `sentiment` | CBBI, CMC sentiment, AI insights, channel news, Galaxy Score, social dominance | $0.03 |
 | `late_unlocked_coins` | Post-vesting coins with low remaining selling pressure | $0.005 |
-| `trade_signals` | Trade setups: trending movers, bounces, SAR & MACD entries | $0.025 |
+| `trade_signals` | Trade setups: trending movers, bounces, SAR & MACD entries, RSI, Galaxy Score, today's indicator signals | $0.04 (8 calls) |
 | `technical_analysis(symbol, timeframe)` | Signals, ALSAT, SuperALSAT, PSAR, MACD-DEMA, AlphaTrend, TD, SMC, S/R, Elliott Wave, Ichimoku | $0.06 |
 | `forecast(symbol)` | AI 3-7 day price prediction | $0.005 |
 | `screener(type)` | Find coins by criteria (ichimoku-trend, rsi, vwap, volume, bounce-dip...) | $0.005 |
