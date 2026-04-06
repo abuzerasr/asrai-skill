@@ -1,23 +1,8 @@
 ---
 name: asrai-x402
-description: |
-  Crypto market analysis using Asrai API. Covers technical analysis, screeners, sentiment, forecasting, smart money, Elliott Wave, cashflow, DEX data, and AI-powered insights. Each API call costs $0.005 USDC from your own wallet on Base mainnet via x402.
-  
-  Use when: crypto prices, market analysis, trading signals, sentiment, investment advice, technical indicators, Elliott Wave, smart money analysis, DEX data, or AI crypto forecasting.
-  
-  Keywords: crypto analysis, bitcoin, ethereum, altcoins, trading signals, market sentiment, technical analysis, asrai api, x402, blockchain analytics, cryptocurrency investment
+description: Crypto market analysis using Asrai API. Covers technical analysis, screeners, sentiment, forecasting, smart money, Elliott Wave, cashflow, DEX data, and AI-powered insights. Each API call costs $0.005 USDC from your own wallet on Base mainnet via x402.
 license: MIT
-metadata:
-  openclaw:
-    emoji: 📈
-    requires:
-      env:
-        - ASRAI_PRIVATE_KEY
-  clawdbot:
-    emoji: 📈
-    requires:
-      env:
-        - ASRAI_PRIVATE_KEY
+metadata: {"openclaw":{"emoji":"📈","requires":{"env":["ASRAI_PRIVATE_KEY"]}},"clawdbot":{"emoji":"📈","requires":{"env":["ASRAI_PRIVATE_KEY"]}}}
 ---
 
 # Asrai — Crypto Analysis via x402
