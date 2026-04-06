@@ -7,6 +7,17 @@ description: |
   
   Keywords: crypto analysis, bitcoin, ethereum, altcoins, trading signals, market sentiment, technical analysis, asrai api, x402, blockchain analytics, cryptocurrency investment
 license: MIT
+metadata:
+  openclaw:
+    emoji: 📈
+    requires:
+      env:
+        - ASRAI_PRIVATE_KEY
+  clawdbot:
+    emoji: 📈
+    requires:
+      env:
+        - ASRAI_PRIVATE_KEY
 ---
 
 # Asrai — Crypto Analysis via x402
