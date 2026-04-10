@@ -34,6 +34,8 @@ x402 automatic — $0.005 USDC per endpoint on Base mainnet ($0.01 for `/ai`)
 - `GET /api/ew/<symbol>usdt/1D|4H|1W` — Elliott Wave
 - `GET /api/smartmoney/<symbol>usdt/1D|4H|1W` — SMC (order blocks, FVG, BOS)
 - `GET /api/support-resistance/<symbol>usdt/1D|4H|1W` — support/resistance levels
+
+### Forecasting
 - `GET /api/forecasting/<symbol>usdt` — AI price forecast
 
 ### Screeners
