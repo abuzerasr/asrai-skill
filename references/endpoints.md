@@ -18,7 +18,6 @@ x402 automatic — $0.005 USDC per endpoint on Base mainnet ($0.01 for `/ai`)
 
 ### Sentiment
 - `GET /api/cbbi/` — Bitcoin cycle index
-- `GET /api/cmc-sentiment/` — CMC market sentiment
 - `GET /api/cmcai/` — CMC AI insights
 - `GET /api/cmcai/<symbol>` — CMC AI for specific coin
 
