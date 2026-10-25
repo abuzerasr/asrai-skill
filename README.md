@@ -81,7 +81,7 @@ Just ask your agent naturally — it picks the right tool automatically:
 
 > "Do a technical analysis on BTC 4h"
 > "What's the market sentiment right now?"
-> "Give me a price forecast for ETH"
+> "Give me a trade plan for ETH"
 > "Show me the top gainers"
 > "What does ALSAT signal mean?"
 > "Analyze SOL and tell me if I should buy"
@@ -93,7 +93,7 @@ OpenClaw runs these commands directly. Same tool names as MCP:
 ```bash
 npx -y -p asrai-mcp asrai technical_analysis BTC 4h
 npx -y -p asrai-mcp asrai sentiment
-npx -y -p asrai-mcp asrai forecast ETH
+npx -y -p asrai-mcp asrai technical_analysis ETH
 npx -y -p asrai-mcp asrai market_overview
 npx -y -p asrai-mcp asrai ask_ai "Is BTC a good buy right now?"
 npx -y -p asrai-mcp asrai coin_info SOL
@@ -123,7 +123,6 @@ npx -y -p asrai-mcp asrai indicator_guide ALSAT
 | `late_unlocked_coins` | Post-vesting coins with low remaining selling pressure | $0.005 |
 | `trade_signals` | Trade setups: trending movers, bounces, SAR & MACD entries, RSI, Galaxy Score, stronger & weaker coins, today's indicator signals | $0.045 (9 calls) |
 | `technical_analysis(symbol, timeframe)` | Signals, ALSAT, SuperALSAT, PSAR, MACD-DEMA, AlphaTrend, TD, SMC, S/R, Elliott Wave, Ichimoku | $0.055 |
-| `forecast(symbol)` | AI 3-7 day price prediction | $0.005 |
 | `screener(type)` | Find coins by criteria (ichimoku-trend, rsi, vwap, volume, bounce-dip, stronger-weaker-coins...) | $0.005 |
 | `smart_money(symbol, timeframe)` | Order blocks, fair value gaps, support/resistance | $0.01 |
 | `elliott_wave(symbol, timeframe)` | Elliott Wave analysis | $0.005 |
