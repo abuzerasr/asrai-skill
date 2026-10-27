@@ -133,6 +133,7 @@ Requires `ASRAI_PRIVATE_KEY` set in `~/.env` or environment. Payment is signed a
 | `trade_plan(symbol, side, timeframe)` | Code-built entry/stop/targets + R:R, PASS/FAIL vs Asrai's data-backed rules | $0.01–$0.015 (2–3 calls) |
 | `fundamentals(symbol, list)` | Project fundamentals: TVL, fees, revenue, market cap vs revenue, investors and funding rounds; or investment-ideas lists | $0.005 |
 | `upcoming_unlocks(days, min_pct)` | Upcoming token unlocks (date, % of market cap, USD) — free | FREE |
+| `analyst_views(coin?, topic?, q?)` | What the analysts Asrai follows think (macro, cycle, technical) — free | FREE |
 | `asrai_research(topic)` | Asrai's backtest findings with sample sizes — free | FREE |
 | `rr_check(entry, stop, targets)` | Free R:R + position-size calculator with Asrai's history per R:R band | FREE |
 | `chart_snapshot(symbol, timeframe)` | Chart picture with Asrai indicators → public image URL (+ PNG with inline) | $0.005 |
