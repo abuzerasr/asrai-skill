@@ -117,10 +117,12 @@ Requires `ASRAI_PRIVATE_KEY` set in `~/.env` or environment. Payment is signed a
 | `smart_money(symbol, timeframe)` | Order blocks, fair value gaps, support/resistance | $0.01 (2 calls) |
 | `elliott_wave(symbol, timeframe)` | Elliott Wave analysis | $0.005 |
 | `ichimoku(symbol, timeframe)` | Ichimoku cloud analysis | $0.005 |
-| `cashflow(mode, symbol)` | Capital flow data | $0.005 |
+| `cashflow(mode, symbol)` | Capital flow data — live (market/coin/group) and history (changes) | $0.005 |
+| `derivatives(symbol?)` | Futures facts: funding, open interest, long %, what drives the move | $0.005 |
 | `coin_info(symbol)` | Stats, price, tags, CMC AI + auto DEX data | $0.025–$0.03 (5–6 calls) |
 | `coin_news(symbol)` | A coin's labelled news: event type + good/bad impact, key events first | $0.005 |
 | `market_news` | Latest breaking crypto news, labelled: coins, event type, good/bad impact | $0.005 |
+| `market_radar` | Live market radar: moves, liquidations, funding, highs/lows, listings, news — right now | $0.005 |
 | `dexscreener(contract)` | DEX trading data | $0.005 |
 | `chain_tokens(chain, max_mcap)` | Low-cap tokens on a specific chain | $0.005 |
 | `model_portfolio` | Asrai's curated model portfolio (by Abu) — not the user's holdings (old name: portfolio) | $0.005 |
