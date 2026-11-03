@@ -91,7 +91,7 @@ npx -y -p asrai-mcp asrai technical_analysis ETH
 npx -y -p asrai-mcp asrai market_overview
 npx -y -p asrai-mcp asrai coin_info SOL
 npx -y -p asrai-mcp asrai portfolio
-npx -y -p asrai-mcp asrai indicator_guide ALSAT
+npx -y -p asrai-mcp asrai indicator_guide Asrix
 ```
 
 Requires `ASRAI_PRIVATE_KEY` set in `~/.env` or environment. Payment is signed automatically.
@@ -112,7 +112,7 @@ Requires `ASRAI_PRIVATE_KEY` set in `~/.env` or environment. Payment is signed a
 | `sentiment(symbol?)` | Market sentiment (CBBI, CMC AI, channel news, most talked / talk rising / most positive on X) or one coin's crowd mood | $0.005–$0.02 (1–4 calls) |
 | `late_unlocked_coins` | Post-vesting coins with low remaining selling pressure | $0.005 |
 | `trade_signals` | Trade setups: trending movers, bounces, SAR & MACD entries, RSI, Galaxy Score, stronger & weaker coins, Asrai signals of the last 3 days | $0.045 (9 calls) |
-| `technical_analysis(symbol, timeframe)` | Signals, ALSAT, SuperALSAT, PSAR, MACD-DEMA, AlphaTrend, TD, SMC, S/R, Elliott Wave, Ichimoku | $0.055 (11 calls) |
+| `technical_analysis(symbol, timeframe)` | Signals, Asrix, SuperAsrix, PSAR, MACD-DEMA, AlphaTrend, TD, SMC, S/R, Elliott Wave, Ichimoku | $0.055 (11 calls) |
 | `screener(type)` | Find coins by criteria (ichimoku-trend, rsi, vwap, volume, bounce-dip, stronger-weaker-coins...) | $0.005 |
 | `smart_money(symbol, timeframe)` | Order blocks, fair value gaps, support/resistance | $0.01 (2 calls) |
 | `elliott_wave(symbol, timeframe)` | Elliott Wave analysis | $0.005 |
@@ -131,7 +131,7 @@ Requires `ASRAI_PRIVATE_KEY` set in `~/.env` or environment. Payment is signed a
 | `market_pulse` | The market in one call: regime, BTC filter, sentiment, S&P/Nasdaq, top key news | $0.025 (5 calls) |
 | `track_record` | Asrai's public AI-setup scorecard + paper account — free | FREE |
 | `coin_brief(symbol | symbols)` | Start here for a coin: 1D+4H trend, levels, ATR, signals with age, key news, verdict (3 calls per coin + 1 for the crowd mood of all, up to 10 coins) | $0.015 (3 calls) |
-| `fresh_signals(days, side, timeframe)` | Asrai signals (ALSAT, TD9, TD13…) of the last 1–14 days, newest first, with age | $0.005 |
+| `fresh_signals(days, side, timeframe)` | Asrai signals (Asrix, TD9, TD13…) of the last 1–14 days, newest first, with age | $0.005 |
 | `trade_plan(symbol, side, timeframe)` | Code-built entry/stop/targets + R:R, PASS/FAIL vs Asrai's data-backed rules | $0.01–$0.015 (2–3 calls) |
 | `fundamentals(symbol, list)` | Project fundamentals: TVL, fees, revenue, market cap vs revenue, investors and funding rounds; or investment-ideas lists | $0.005 |
 | `upcoming_events(days, coins, type)` | Crypto calendar: Fed / CPI / options days, exchange delistings & listings, big unlocks — free | FREE |

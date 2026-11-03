@@ -83,7 +83,7 @@ Just ask your agent naturally — it picks the right tool automatically:
 > "What's the market sentiment right now?"
 > "Give me a trade plan for ETH"
 > "Show me the top gainers"
-> "What does ALSAT signal mean?"
+> "What does Asrix signal mean?"
 > "Analyze SOL and tell me if I should buy"
 
 ### OpenClaw — bash commands
@@ -100,7 +100,7 @@ npx -y -p asrai-mcp asrai coin_info SOL
 npx -y -p asrai-mcp asrai screener ath
 npx -y -p asrai-mcp asrai smart_money BTC 1d
 npx -y -p asrai-mcp asrai portfolio
-npx -y -p asrai-mcp asrai indicator_guide ALSAT
+npx -y -p asrai-mcp asrai indicator_guide Asrix
 ```
 
 ---
@@ -122,7 +122,7 @@ npx -y -p asrai-mcp asrai indicator_guide ALSAT
 | `sentiment` | CBBI, CMC sentiment, AI insights, channel news, Galaxy Score, social dominance | $0.03 |
 | `late_unlocked_coins` | Post-vesting coins with low remaining selling pressure | $0.005 |
 | `trade_signals` | Trade setups: trending movers, bounces, SAR & MACD entries, RSI, Galaxy Score, stronger & weaker coins, today's indicator signals | $0.045 (9 calls) |
-| `technical_analysis(symbol, timeframe)` | Signals, ALSAT, SuperALSAT, PSAR, MACD-DEMA, AlphaTrend, TD, SMC, S/R, Elliott Wave, Ichimoku | $0.055 |
+| `technical_analysis(symbol, timeframe)` | Signals, Asrix, SuperAsrix, PSAR, MACD-DEMA, AlphaTrend, TD, SMC, S/R, Elliott Wave, Ichimoku | $0.055 |
 | `screener(type)` | Find coins by criteria (ichimoku-trend, rsi, vwap, volume, bounce-dip, stronger-weaker-coins...) | $0.005 |
 | `smart_money(symbol, timeframe)` | Order blocks, fair value gaps, support/resistance | $0.01 |
 | `elliott_wave(symbol, timeframe)` | Elliott Wave analysis | $0.005 |

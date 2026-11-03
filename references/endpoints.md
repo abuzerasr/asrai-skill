@@ -23,8 +23,8 @@ x402 automatic — $0.005 USDC per endpoint on Base mainnet ($0.01 for `/ai`)
 
 ### Technical Signals (single coin)
 - `GET /api/signal/<symbol>usdt/1D|4H|1W` — buy/sell signal
-- `GET /api/alsat/<symbol>usdt/1D|4H|1W` — ALSAT indicator
-- `GET /api/superalsat/<symbol>usdt` — SuperALSAT
+- `GET /api/asrix/<symbol>usdt/1D|4H|1W` — Asrix indicator
+- `GET /api/superasrix/<symbol>usdt` — SuperAsrix
 - `GET /api/alphatrend/<symbol>usdt/1D|4H|1W` — AlphaTrend
 - `GET /api/psar/<symbol>usdt/1D|4H|1W` — Parabolic SAR
 - `GET /api/macd-dema/<symbol>usdt/1D|4H|1W` — MACD + DEMA
@@ -47,7 +47,7 @@ x402 automatic — $0.005 USDC per endpoint on Base mainnet ($0.01 for `/ai`)
 - `GET /api/socialdominance/`
 - `GET /api/late-unlocked-coins/`
 - `GET /api/rsi/` — RSI heatmap
-- `GET /api/indicator/today` — today's triggered ALSAT & indicator signals (TD9, AlphaTrend, etc.)
+- `GET /api/indicator/today` — today's triggered Asrix & indicator signals (TD9, AlphaTrend, etc.)
 - `GET /api/stronger-weaker-coins/` — during a BTC drop: `stronger_coins` (held up, long candidates) and `weaker_coins` (fell more than BTC, short candidates).
 
 ### Coin Info
