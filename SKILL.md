@@ -113,7 +113,7 @@ Requires `ASRAI_PRIVATE_KEY` set in `~/.env` or environment. Payment is signed a
 | `late_unlocked_coins` | Post-vesting coins with low remaining selling pressure | $0.005 |
 | `trade_signals` | Trade setups: trending movers, bounces, SAR & MACD entries, RSI, Galaxy Score, stronger & weaker coins, Asrai signals of the last 3 days | $0.045 (9 calls) |
 | `technical_analysis(symbol, timeframe)` | Signals, Asrix, SuperAsrix, PSAR, MACD-DEMA, AlphaTrend, TD, SMC, S/R, Elliott Wave, Ichimoku | $0.055 (11 calls) |
-| `screener(type)` | Find coins by criteria (ichimoku-trend, rsi, vwap, volume, bounce-dip, stronger-weaker-coins...) | $0.005 |
+| `screener(ready, rules, sort, top, limit, list, screener_type)` | Coin screener: Asrai ready screens with backtest marks, your own rules (signals + indicators on 4h/1D/1W), or classic lists | $0.005–$0.01 (1–2 calls) |
 | `smart_money(symbol, timeframe)` | Order blocks, fair value gaps, support/resistance | $0.01 (2 calls) |
 | `elliott_wave(symbol, timeframe)` | Elliott Wave analysis | $0.005 |
 | `ichimoku(symbol, timeframe)` | Ichimoku cloud analysis | $0.005 |
@@ -135,6 +135,7 @@ Requires `ASRAI_PRIVATE_KEY` set in `~/.env` or environment. Payment is signed a
 | `trade_plan(symbol, side, timeframe)` | Code-built entry/stop/targets + R:R, PASS/FAIL vs Asrai's data-backed rules | $0.01–$0.015 (2–3 calls) |
 | `fundamentals(symbol, list)` | Project fundamentals: TVL, fees, revenue, market cap vs revenue, investors and funding rounds; or investment-ideas lists | $0.005 |
 | `correlated_coins(symbol, vs)` | Coins that really move together (30-day hourly correlation, market removed), 24h moves, solo-pump check; or two coins + who moves first | $0.005 |
+| `coin_categories(symbol, category, sort, q)` | Categories: alternatives to a coin (same story, smaller cap), one category's coins (gainers/trending/new), all categories — free | FREE |
 | `upcoming_events(days, coins, type)` | Crypto calendar: Fed / CPI / options days, exchange delistings & listings, big unlocks — free | FREE |
 | `outlooks(symbol)` | Outlook Scout: odds a coin is higher/lower after 3 or 7 days, scored on real prices — free | FREE |
 | `upcoming_unlocks(days, min_pct)` | Upcoming token unlocks (date, % of market cap, USD) — free | FREE |
