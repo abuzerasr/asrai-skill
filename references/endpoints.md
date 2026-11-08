@@ -12,7 +12,6 @@ x402 automatic — $0.005 USDC per endpoint on Base mainnet ($0.01 for `/ai`)
 - `GET /api/trending/` — trending coins
 - `GET /api/gainers-losers/` — top gainers and losers
 - `GET /api/rsi/` — RSI extremes (overbought/oversold)
-- `GET /api/top-bottom/` — top/bottom signals
 - `GET /api/ath/` — coins near all-time high
 - `GET /api/channel-summary/` — latest narratives from monitored channels
 
