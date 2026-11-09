@@ -126,7 +126,7 @@ Requires `ASRAI_PRIVATE_KEY` set in `~/.env` or environment. Payment is signed a
 | `dexscreener(contract)` | DEX trading data | $0.005 |
 | `chain_tokens(chain?, max_mcap?, tab?)` | Chain Screener: new on-chain tokens that passed the safety checks (hot / fresh / safe / traps) | $0.005 |
 | `token_check(query, chain?)` | Is this on-chain token a trap? Safety, fakes, health, community — any address or name | $0.005 |
-| `portfolio_builder(amount?)` | The Asrai Plan: a long-term 25-coin plan split by the market state, with reasons and an honest record | $0.005 |
+| `portfolio_builder(amount?)` | The Asrai Plan: a long-term basket chosen by AI, one coin per narrative, split by the market state, with reasons and real results | $0.005 |
 | `model_portfolio` | Asrai's curated model portfolio — not the user's holdings (old name: portfolio) | $0.005 |
 | `ask_ai(question)` | AI analyst freeform answer | $0.01 |
 | `positions` | Your live open positions across connected exchanges (MEXC, Binance, Lighter) — requires exchange keys configured via /exchange_apis in Telegram | $0.005–$0.015 (1–3 calls) |
